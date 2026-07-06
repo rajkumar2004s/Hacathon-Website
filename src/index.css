@@ -1,0 +1,571 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.but:hover {
+  transform: scale(1.07);
+  transition: all 1s ease;
+}
+
+.xyz:hover {
+  transform: scale(1.08);
+  transition: 0.8s;
+  border: 2px solid #79c70d;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-card {
+  background: #161f2f;
+  border: 1px solid #6b7280;
+  border-radius: 12px;
+  padding: 12px;
+  width: 26vw;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-card .nav-links {
+  display: none;
+  transition: 0.3s;
+}
+
+.nav:hover {
+  text-decoration: underline;
+  color: rgb(12, 104, 185);
+}
+
+.timer-box {
+  padding: 13px;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 25px;
+  font-family: sans-serif;
+}
+
+.description-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: whitesmoke;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hack {
+  font-weight: bold;
+}
+
+.abouthack {
+  font-weight: bold;
+}
+
+.card1:hover {
+  transform: scale(1.03);
+  transition: all 1s;
+  border: 1px solid rgb(63, 63, 187);
+}
+
+.card2:hover {
+  transform: scale(1.03);
+  transition: all 1s;
+  border: 1px solid rgb(179, 78, 187);
+}
+
+.card3:hover {
+  transform: scale(1.03);
+  transition: all 1s;
+  border: 1px solid rgb(12, 68, 33);
+}
+
+.card4:hover {
+  transform: scale(1.03);
+  transition: all 1s;
+  border: 1px solid rgb(111, 105, 13);
+}
+
+@media (max-width: 576px) {
+  .small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.new-card:hover {
+  background-color: #1c2445;
+  transition: all 0.5s ease;
+}
+
+.edition {
+  font-weight: bold;
+}
+
+.bg-card-1:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-color: #182937;
+}
+
+.bg-card-2:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-color: #3d1648;
+}
+
+.bg-card-3:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-color: #15373e;
+}
+
+.bg-card-4:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-color: #4f4a11;
+}
+
+.bg-card-5:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-color: #54331c;
+}
+
+.bg-card-6:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-color: #031422;
+}
+.theme {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.bg-img-1:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-image: radial-gradient(#042462, #192237);
+}
+
+.img-1:hover {
+  transition: all 1s;
+  border: 2px dashed gray;
+  width: 20vw;
+  height: 15vh;
+  border-radius: 20px;
+  padding: 10px;
+  background-image: radial-gradient(#2351b2, #142447);
+}
+
+.bg-img-2:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-image: radial-gradient(#2d3d6a, #832c80);
+}
+
+.img-2:hover {
+  transition: all 1s;
+  border: 2px dashed gray;
+  width: 20vw;
+  height: 15vh;
+  border-radius: 20px;
+  padding: 10px;
+  background-image: radial-gradient(#1d3041, #64275c);
+}
+
+.bg-img-3:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-image: radial-gradient(#164141, #132b3a);
+}
+
+.img-3:hover {
+  transition: all 1s;
+  border: 2px dashed gray;
+  width: 20vw;
+  height: 15vh;
+  border-radius: 20px;
+  padding: 10px;
+  background-image: radial-gradient(#1b1a3a, #244855);
+}
+
+.card-1 {
+  background-color: #161f2f;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #6b7280;
+}
+
+.expandhover:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+
+.prob {
+  font-weight: bold;
+}
+
+.problemstatement-card-1 {
+  background-color: #161f2f;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  width: 80vw;
+  padding: 12px;
+  border: 1px solid #6b7280;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.problemstatement-card-1:hover {
+  border: 1px solid rgb(12, 73, 194);
+}
+
+.expand-content-1 {
+  display: flex;
+}
+
+.doc:hover {
+  transform: scale(1.03);
+  transition: all 1s;
+}
+
+.doc2:hover {
+  transform: scale(1.03);
+  transition: all 1s;
+}
+
+.prize {
+  font-weight: bold;
+}
+
+#prizessection h3 {
+  font-weight: bold;
+}
+
+.part:hover {
+  transform: scale(1.02);
+  transition: all 1s;
+}
+
+.trophy {
+  transition: all 1s ease;
+}
+
+.trophy:hover {
+  transform: scale(1.05);
+  background-color: #2e4772;
+  border-radius: 35px;
+}
+
+.trophy-icon {
+  transition: all 0.5s ease;
+}
+
+.trophy-icon:hover {
+  animation: bounce 2s ease-in infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(10%);
+  }
+
+  50% {
+    transform: translateY(-20%);
+  }
+
+  100% {
+    transform: translateY(10%);
+  }
+}
+
+.paws {
+  animation: paws 2s ease-in-out infinite;
+}
+
+@keyframes paws {
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.but {
+  transition: all 0.4s ease;
+}
+
+.but:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+  .x {
+    margin: 10px;
+  }
+}
+#schedulesection h1 {
+  font-weight: bold;
+}
+
+#why-participate h1 {
+  font-weight: bold;
+}
+
+.participate {
+  animation: part 2s ease infinite alternate;
+}
+
+.participate:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.xyz:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+@keyframes part {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-20%);
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+/* Heading */
+
+#badgesection h1 {
+  font-weight: bold;
+}
+
+#badgesection input {
+  font-family: sans-serif;
+  outline: none;
+}
+
+#badgesection input[type="text"] {
+  padding: 12px;
+  background-color: #53585e;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#badgesection input[type="text"]::placeholder {
+  color: #d5d5d5;
+}
+
+#badgesection button {
+  transition: all 0.3s ease;
+}
+
+#badgesection button:hover {
+  transform: scale(1.05);
+}
+
+/* Upload Button */
+
+#badgesection label {
+  transition: all 0.3s ease;
+}
+
+#badgesection label:hover {
+  transform: scale(1.05);
+}
+
+canvas {
+  border-radius: 12px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+.font-caveat {
+  font-family: "Caveat", cursive;
+}
+.theme {
+  font-weight: bold;
+}
+
+.bg-img-1:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-image: radial-gradient(#042462, #192237);
+}
+
+.img-1:hover {
+  transition: all 1s;
+  border: 2px dashed gray;
+  width: 20vw;
+  height: 15vh;
+  border-radius: 20px;
+  padding: 10px;
+  background-image: radial-gradient(#2351b2, #142447);
+}
+
+.bg-img-2:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-image: radial-gradient(#2d3d6a, #832c80);
+}
+
+.img-2:hover {
+  transition: all 1s;
+  border: 2px dashed gray;
+  width: 20vw;
+  height: 15vh;
+  border-radius: 20px;
+  padding: 10px;
+  background-image: radial-gradient(#1d3041, #64275c);
+}
+
+.bg-img-3:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  background-image: radial-gradient(#164141, #132b3a);
+}
+
+.img-3:hover {
+  transition: all 1s;
+  border: 2px dashed gray;
+  width: 20vw;
+  height: 15vh;
+  border-radius: 20px;
+  padding: 10px;
+  background-image: radial-gradient(#1b1a3a, #244855);
+}
+
+.card-1 {
+  background: #161f2f;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #6b7280;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.expandhover:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+.part:hover {
+  transform: scale(1.02);
+  transition: all 0.5s ease;
+}
+
+.prize {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.paws {
+  animation: paws 2s ease-in-out infinite;
+}
+
+@keyframes paws {
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.trophy {
+  transition: all 0.5s ease;
+}
+
+.trophy:hover {
+  transform: scale(1.05);
+  background-color: #2e4772;
+  border-radius: 35px;
+}
+
+.trophy-icon {
+  transition: all 0.5s ease;
+}
+
+.trophy-icon:hover {
+  animation: bounce 1.2s ease infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(10%);
+  }
+
+  50% {
+    transform: translateY(-20%);
+  }
+
+  100% {
+    transform: translateY(10%);
+  }
+}
+
+@media (max-width: 576px) {
+  .part {
+    margin: 10px;
+  }
+}
