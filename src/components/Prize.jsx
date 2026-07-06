@@ -43,16 +43,14 @@ const Prizes = () => {
               Innovation
             </p>
 
-            {/* Prize Cards */}
-
-            <div className="pt-8 md:flex grid grid-cols-1 gap-4 p-4 m-4">
+            <div className="pt-8 md:flex gap-4 p-4 m-4">
               {prizeCards.map((card) => {
                 const Icon = card.icon;
 
                 return (
                   <div
                     key={card.id}
-                    className="part bg-[radial-gradient(#022854,#030508)] rounded-[10px] border border-gray-500 md:w-[24vw] md:h-[40vh] w-[80vw] p-3 flex flex-col items-center justify-center"
+                    className="part bg-[radial-gradient(#022854,#030508)] rounded-[10px] border border-gray-500 md:w-[24vw] md:h-[40vh] w-[60vw]  p-3 flex flex-col items-center justify-center"
                   >
                     <div
                       className={`bg-gradient-to-r ${card.gradient} w-20 h-20 rounded-full flex justify-center items-center`}
