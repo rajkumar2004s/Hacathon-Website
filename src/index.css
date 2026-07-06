@@ -1,4 +1,8 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   scroll-behavior: smooth;
@@ -385,8 +389,6 @@ h3 {
   }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
-
 /* Heading */
 
 #badgesection h1 {
@@ -432,8 +434,6 @@ h3 {
 canvas {
   border-radius: 12px;
 }
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
-
 .font-caveat {
   font-family: "Caveat", cursive;
 }
